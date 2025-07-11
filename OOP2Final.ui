@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>746</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="Main_Title">
+        <property name="minimumSize">
+         <size>
+          <width>489</width>
+          <height>58</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>AGRIEDGE CONTROL PANNEL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font: bold 14px &quot;Segoe UI&quot;;
+    color: #34495e;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+QLabel {
+    font-size: 13px;
+    color: #2c3e50;
+}
+QLineEdit {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 13px;
+}
+</string>
+        </property>
+        <property name="title">
+         <string>Informations</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="Mod_label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Mod:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Mod_Value">
+             <property name="text">
+              <string>Default</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="system_label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>System Status</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="system_value">
+             <property name="text">
+              <string>Kapalı</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="Battery_Label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Battery:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Battery_Value">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="haritalama_label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Mapping Status</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="haritalama_value">
+             <property name="text">
+              <string>Baslamadı</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="Temp_Label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Temperature</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Temp_Value">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="capalama_label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Hoeing Status</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="capalama_value">
+             <property name="text">
+              <string>Baslamadı</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="Location_Label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Location</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Loc_X_Val">
+             <property name="text">
+              <string>x: 0</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Loc_Y_Val">
+             <property name="text">
+              <string>y: 0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="loglama_label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Logging</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="loglama_value">
+             <property name="text">
+              <string>Baslamadı</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="Speed_Label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Speed_Value">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="Speed_Label_2">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Turning Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Speed_Value_2">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QLabel" name="Speed_Label_4">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Brake</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Speed_Value_4">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QLabel" name="Speed_Label_3">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Hoeing Depth</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Speed_Value_3">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+             </property>
+             <property name="text">
+              <string>Warning:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelWarning1">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="1">
+          <widget class="QCheckBox" name="Detail_Check_Box">
+           <property name="styleSheet">
+            <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+           </property>
+           <property name="text">
+            <string>Detailed Information Mode</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font: bold 14px &quot;Segoe UI&quot;;
+    color: #34495e;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+QLabel {
+    font-size: 13px;
+    color: #2c3e50;
+}
+QLineEdit {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 13px;
+}
+</string>
+        </property>
+        <property name="title">
+         <string>Control Butons</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QPushButton" name="ConnectButon">
+             <property name="text">
+              <string>Connect</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="DisconnectButton">
+             <property name="text">
+              <string>Disconnect</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QPushButton" name="StartMapping">
+             <property name="text">
+              <string>Start Mapping</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="StopMapping">
+             <property name="text">
+              <string>Stop Maping</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QPushButton" name="CapalamaStart">
+             <property name="text">
+              <string>Hoeing Start</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CapalamaStop">
+             <property name="text">
+              <string>Hoeing Stop</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QPushButton" name="log_start_buton">
+             <property name="text">
+              <string>Log Start</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="log_stop_buton">
+             <property name="text">
+              <string>Log Stop</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="Speed_Bar">
+               <property name="styleSheet">
+                <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+               </property>
+               <property name="text">
+                <string>Speed</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="Speed_Value2">
+               <property name="text">
+                <string>0  </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="Speed_horizontalSlideR">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QLabel" name="Turn_Speed_Bar">
+                 <property name="styleSheet">
+                  <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Turning Speed</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="Turn_Speed_value">
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="Turn_Speed_Slider">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="Fren_Bar">
+               <property name="styleSheet">
+                <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+               </property>
+               <property name="text">
+                <string>Brake</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="Fren_Value">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="Freen_Slider">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLabel" name="Capa_Bar">
+                 <property name="styleSheet">
+                  <string notr="true">color: #2c3e50;            /* Yazı rengi */
+font-weight: bold;         /* Kalın */
+font-size: 14px;           /* Boyut */
+font-family: &quot;Segoe UI&quot;;   /* Yazı tipi */
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Hoeing Depth</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="Capa_Value">
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="Capa_Slider">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="minimumSize">
+         <size>
+          <width>711</width>
+          <height>462</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font: bold 14px &quot;Segoe UI&quot;;
+    color: #34495e;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+QLabel {
+    font-size: 13px;
+    color: #2c3e50;
+}
+QLineEdit {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 13px;
+}
+</string>
+        </property>
+        <property name="title">
+         <string>Robot Cam View</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QFrame" name="Cam_View">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>671</width>
+                <height>412</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QGroupBox" name="Terminal_Group">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font: bold 14px &quot;Segoe UI&quot;;
+    color: #34495e;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+QLabel {
+    font-size: 13px;
+    color: #2c3e50;
+}
+QLineEdit {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 13px;
+}
+</string>
+        </property>
+        <property name="title">
+         <string>Control Window</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTextEdit" name="CmdReadOnly"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="CmdEnter"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1021</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMapping">
+    <property name="title">
+     <string>Mapping</string>
+    </property>
+    <addaction name="actionLIDAR"/>
+    <addaction name="actionKinect_Depth_Cam"/>
+    <addaction name="actionView_Map"/>
+    <addaction name="actionExport_Map"/>
+   </widget>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actionManuel"/>
+    <addaction name="actionAutomatic"/>
+   </widget>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_About">
+    <property name="title">
+     <string>Help / About</string>
+    </property>
+    <addaction name="actionUser_Manual"/>
+    <addaction name="actionContact_Developer"/>
+    <addaction name="actionVersion_Info"/>
+    <addaction name="actionCheck_for_Updates"/>
+   </widget>
+   <widget class="QMenu" name="menuLogs_Data">
+    <property name="title">
+     <string>Logs / Data</string>
+    </property>
+    <addaction name="actionView_Logs"/>
+    <addaction name="actionExport_Logs"/>
+    <addaction name="actionSensor_History"/>
+    <addaction name="actionSystem_Status"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionConnection_Settings"/>
+    <addaction name="actionRobot_Parameters"/>
+   </widget>
+   <addaction name="menuMapping"/>
+   <addaction name="menuMode"/>
+   <addaction name="menuHome"/>
+   <addaction name="menuHelp_About"/>
+   <addaction name="menuLogs_Data"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLIDAR">
+   <property name="text">
+    <string>LIDAR</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+L</string>
+   </property>
+  </action>
+  <action name="actionKinect_Depth_Cam">
+   <property name="text">
+    <string>Kinect Depth Cam</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+K</string>
+   </property>
+  </action>
+  <action name="actionManuel">
+   <property name="text">
+    <string>Manuel</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+M</string>
+   </property>
+  </action>
+  <action name="actionAutomatic">
+   <property name="text">
+    <string>Auto</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+A</string>
+   </property>
+  </action>
+  <action name="actionUser_Manual">
+   <property name="text">
+    <string>User Manual</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionContact_Developer">
+   <property name="text">
+    <string>Contact Developer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionVersion_Info">
+   <property name="text">
+    <string>Version Info</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionCheck_for_Updates">
+   <property name="text">
+    <string>Check for Updates</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionView_Logs">
+   <property name="text">
+    <string>View Logs</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionExport_Logs">
+   <property name="text">
+    <string>Export Logs</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionSensor_History">
+   <property name="text">
+    <string>Sensor History</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionSystem_Status">
+   <property name="text">
+    <string>System Status</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionConnection_Settings">
+   <property name="text">
+    <string>Connection Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+C</string>
+   </property>
+  </action>
+  <action name="actionRobot_Parameters">
+   <property name="text">
+    <string>Robot Parameters</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+R</string>
+   </property>
+  </action>
+  <action name="actionLanguage">
+   <property name="text">
+    <string>Language</string>
+   </property>
+  </action>
+  <action name="actionAppearance_Dark_Light_Mode">
+   <property name="text">
+    <string>Appearance (Dark/Light Mode)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionView_Map">
+   <property name="text">
+    <string>View Map</string>
+   </property>
+  </action>
+  <action name="actionExport_Map">
+   <property name="text">
+    <string>Export Map</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+O</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Speed_horizontalSlideR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Speed_Value</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>756</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Speed_horizontalSlideR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Speed_Value2</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Freen_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Fren_Value</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Turn_Speed_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Turn_Speed_value</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>596</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Capa_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Capa_Value</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>635</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>598</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Freen_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Speed_Value_4</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Turn_Speed_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Speed_Value_2</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>931</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Capa_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Speed_Value_3</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>674</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
